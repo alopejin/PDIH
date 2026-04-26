@@ -1,22 +1,22 @@
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(11, OUTPUT);
+  //Configuración inicial:
+  pinMode(13, OUTPUT); //pin 13 conectado al LED rojo
+  pinMode(12, OUTPUT); //pin 12 conectado al LED amarillo
+  pinMode(11, OUTPUT); //pin 11 conectado al LED verde
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  digitalWrite(13, HIGH);
-  digitalWrite(12, LOW);
-  digitalWrite(11, LOW);
-  delay(1500);
-  digitalWrite(13, LOW);
-  digitalWrite(12, HIGH);
-  digitalWrite(11, LOW);
-  delay(1500);
-  digitalWrite(13, LOW);
-  digitalWrite(12, LOW);
-  digitalWrite(11, HIGH);
-  delay(1500);
+  //Ejecución en bucle:
+  digitalWrite(13, HIGH); //encendemos el LED rojo
+  digitalWrite(12, LOW); //apagamos el LED amarillo
+  digitalWrite(11, LOW); //apagamos el LED verde
+  delay(1500); //esperamos 1500 ms (1,5 segundos)
+  digitalWrite(13, LOW); //apagamos el LED rojo
+  digitalWrite(12, HIGH); //encendemos el LED amarillo
+  digitalWrite(11, LOW); //apagamos el LED verde
+  delay(1500); //esperamos 1500 ms
+  digitalWrite(13, LOW); //apagamos el LED rojo
+  digitalWrite(12, LOW); //apagamos el LED amarillo
+  digitalWrite(11, HIGH); //encendemos el LED verde
+  delay(1500); //esperamos 1500 ms
 }
