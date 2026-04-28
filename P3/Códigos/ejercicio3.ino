@@ -27,5 +27,15 @@ void loop() {
   digitalWrite(12, LOW); //apagamos el segundo LED rojo
   digitalWrite(11, LOW); //apagamos el tercer LED rojo
   digitalWrite(10, HIGH); //encendemos el cuarto LED rojo
+  delay(200); //esperamos 200 ms  
+  digitalWrite(13, LOW); //apagamos el primer LED rojo
+  digitalWrite(12, LOW); //apagamos el segundo LED rojo
+  digitalWrite(11, HIGH); //encendemos el tercer LED rojo
+  digitalWrite(10, LOW); //apagamos el cuarto LED rojo
+  delay(200); //esperamos 200 ms
+  digitalWrite(13, LOW); //apagamos el primer LED rojo
+  digitalWrite(12, HIGH); //encendemos el segundo LED rojo
+  digitalWrite(11, LOW); //apagamos el tercer LED rojo
+  digitalWrite(10, LOW); //apagamos el cuarto LED rojo
   delay(200); //esperamos 200 ms
 }
