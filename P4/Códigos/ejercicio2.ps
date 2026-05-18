@@ -1,0 +1,84 @@
+%!PS
+
+
+% Ejercicio 2: tarjeta de visita
+
+
+% Recuadro de la tarjeta
+
+0.8 0.8 0.8 setrgbcolor
+2 setlinewidth
+newpath
+80 350 moveto
+450 0 rlineto
+0 240 rlineto
+-450 0 rlineto
+closepath
+stroke
+
+% Círculo gris
+0.6 0.6 0.6 setrgbcolor
+newpath
+180 470 60 0 360 arc
+fill
+
+% Borde del círculo
+0.3 0.3 0.3 setrgbcolor
+1.5 setlinewidth
+newpath
+180 470 60 0 360 arc
+stroke
+
+
+% Nombre
+0 setgray
+/Times-Roman findfont
+20 scalefont
+setfont
+
+newpath
+298 530 moveto
+(Alejandro Lopez Jimenez) show
+stroke
+
+% Puesto
+0.3 0.3 0.3 setrgbcolor
+/Times-Roman findfont
+13 scalefont
+setfont
+
+newpath
+300 510 moveto
+(Estudiante de ingenieria informatica) show
+stroke
+
+% Dirección
+0.4 0.4 0.4 setrgbcolor
+/Times-Roman findfont
+10 scalefont
+setfont
+
+newpath
+300 485 moveto
+(Calle Falsa, 123) show
+stroke
+
+% Código postal
+newpath
+300 470 moveto
+(18015 Granada) show
+stroke
+
+%Teléfono
+newpath
+300 455 moveto
+(Tlf: 666 66 66 66) show
+stroke
+
+%Correo electrónico
+newpath
+300 435 moveto
+(alopejin@correo.ugr.es) show
+stroke
+
+showpage

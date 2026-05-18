@@ -1,0 +1,75 @@
+%!PS
+
+
+% Ejercicio 3: corazón y poema
+
+
+% Recuadro azul exterior
+0 0 0.5 setrgbcolor
+2 setlinewidth
+newpath
+60 350 moveto
+500 0 rlineto
+0 280 rlineto
+-500 0 rlineto
+closepath
+stroke
+
+
+% Corazón verde
+% Se forma con dos circulos y un triangulo 
+0 1 0 setrgbcolor
+
+% Círculo izquierdo
+newpath
+170 560 45 0 360 arc
+fill
+
+% Círculo derecho
+newpath
+250 560 45 0 360 arc
+fill
+
+% Triángulo
+newpath
+130 555 moveto
+290 555 lineto
+210 430 lineto
+closepath
+fill
+
+
+% Poesia (a la derecha del corazón)
+
+%Primera línea en gris 
+0.6 0.6 0.6 setrgbcolor
+/Times-Roman findfont
+13 scalefont
+setfont
+newpath
+330 530 moveto
+(El mar me seguia de cerca) show
+stroke
+
+% Resto de líneas en negro
+0 0 0 setrgbcolor
+/Times-Bold findfont
+13 scalefont
+setfont
+
+newpath
+330 510 moveto
+(Sentia sus ondas de plata en mi tobillo) show
+stroke
+
+newpath
+330 490 moveto
+(Su brisa golpeaba mi espalda) show
+stroke
+
+newpath
+330 470 moveto
+(Y me susurraba al oido) show
+stroke
+
+showpage

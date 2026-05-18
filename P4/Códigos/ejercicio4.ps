@@ -1,0 +1,96 @@
+%!PS
+
+
+% Ejercicio ampliado 1: círculos concéntricos + sonrisa, apaisado
+
+% Apaisar la imagen
+<< /PageSize [842 595] >> setpagedevice
+
+
+% Recuadro azul exterior
+0 0 1 setrgbcolor
+2 setlinewidth
+newpath
+40 40 moveto
+762 0 rlineto
+0 515 rlineto
+-762 0 rlineto
+closepath
+stroke
+
+
+% Círculos concéntricos (de fuera a dentro)
+
+% Azul oscuro
+0 0 0.5 setrgbcolor
+newpath
+421 297 200 0 360 arc
+fill
+
+% Rojo
+1 0 0 setrgbcolor
+newpath
+421 297 160 0 360 arc
+fill
+
+% Verde
+0 0.6 0 setrgbcolor
+newpath
+421 297 120 0 360 arc
+fill
+
+% Rosa
+1 0.5 0.5 setrgbcolor
+newpath
+421 297 80 0 360 arc
+fill
+
+% Amarillo
+1 1 0 setrgbcolor
+newpath
+421 297 45 0 360 arc
+fill
+
+
+% Cara en el centro
+
+% Fondo blanco cuadrado para la cara
+1 1 1 setrgbcolor
+newpath
+386 262 moveto
+70 0 rlineto
+0 70 rlineto
+-70 0 rlineto
+closepath
+fill
+
+% Borde negro de la cara
+0 setgray
+1.5 setlinewidth
+newpath
+386 262 moveto
+70 0 rlineto
+0 70 rlineto
+-70 0 rlineto
+closepath
+stroke
+
+% Ojo izquierdo
+0 setgray
+newpath
+407 308 4 0 360 arc
+fill
+
+% Ojo derecho
+newpath
+435 308 4 0 360 arc
+fill
+
+% Sonrisa
+0 setgray
+2 setlinewidth
+newpath
+421 295 14 200 340 arc
+stroke
+
+showpage

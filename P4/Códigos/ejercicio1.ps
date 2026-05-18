@@ -1,0 +1,77 @@
+%!PS
+
+
+% Ejercicio 1: dibujo de unos árboles
+
+
+% Árbol pequeño (izquierda)
+
+% Tronco
+0.45 0.25 0 setrgbcolor
+newpath
+180 200 moveto
+60 0 rlineto
+0 180 rlineto
+-60 0 rlineto
+closepath
+fill
+
+% Copa 1 (círculo grande)
+0.15 0.55 0.20 setrgbcolor
+newpath
+210 460 90 0 360 arc
+fill
+
+% Copa 2 (círculo pequeño encima a la izquierda)
+0.15 0.55 0.20 setrgbcolor
+newpath
+160 530 50 0 360 arc
+fill
+
+
+% Árbol grande (derecha)
+
+% Tronco
+0.45 0.25 0 setrgbcolor
+newpath
+390 200 moveto
+70 0 rlineto
+0 220 rlineto
+-70 0 rlineto
+closepath
+fill
+
+% Copa grande
+0.15 0.55 0.20 setrgbcolor
+newpath
+425 500 110 0 360 arc
+fill
+
+% Copa pequeña 1 (círculo pequeño encima a la derecha)
+0.15 0.55 0.20 setrgbcolor
+newpath
+490 580 60 0 360 arc
+fill
+
+% Copa pequeña 2 (círculo pequeño encima)
+0.15 0.55 0.20 setrgbcolor
+newpath
+400 580 55 0 360 arc
+fill
+
+
+% Pelota verde
+
+0 1 0 setrgbcolor
+newpath
+360 215 18 0 360 arc
+fill
+
+% Borde de la pelota
+0 setgray
+1 setlinewidth
+newpath
+360 215 18 0 360 arc
+stroke
+
+showpage

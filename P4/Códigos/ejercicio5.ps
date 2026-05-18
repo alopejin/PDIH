@@ -1,0 +1,148 @@
+%!PS
+
+
+% Ejercicio ampliado 2: dos páginas (tabla + gráfica)
+
+
+% Página 1: tabla de datos
+
+% Título
+0 setgray
+/Times-Roman findfont
+14 scalefont
+setfont
+newpath
+90 720 moveto
+(Mi tabla de datos) show
+stroke
+
+% Recuadro de la tabla 
+0 0 0 setrgbcolor
+1 setlinewidth
+
+newpath
+90 630 moveto
+260 0 rlineto
+0 60 rlineto
+-260 0 rlineto
+closepath
+stroke
+
+% Línea horizontal que separa la cabecera de los datos
+newpath
+90 660 moveto
+260 0 rlineto
+stroke
+
+
+% Línea vertical entre columnas
+newpath
+220 630 moveto
+0 60 rlineto
+stroke
+
+% Cabeceras
+0 setgray
+/Times-Roman findfont
+11 scalefont
+setfont
+
+newpath
+105 670 moveto
+(Columna-1) show
+stroke
+
+newpath
+235 670 moveto
+(Columna-2) show
+stroke
+
+% Datos
+newpath
+105 640 moveto
+(42) show
+stroke
+
+newpath
+235 640 moveto
+(21) show
+stroke
+
+% Número de página 
+0 0 0 setrgbcolor
+/Times-Roman findfont
+11 scalefont
+setfont
+newpath
+295 50 moveto
+(1) show
+stroke
+
+showpage     % Fin de la primera pagina
+
+
+
+% Página 2: texto + grafica
+
+
+% Título
+0 setgray
+/Times-Roman findfont
+14 scalefont
+setfont
+newpath
+230 720 moveto
+(La imagen) show
+stroke
+
+
+% Ejes de la gráfica
+
+0 0 0 setrgbcolor
+1 setlinewidth
+
+% Eje X
+newpath
+230 600 moveto
+220 0 rlineto
+stroke
+
+% Eje Y
+newpath
+230 600 moveto
+0 90 rlineto
+stroke
+
+
+% Gráfica con los puntos: (240,640) (280,620) (320,670) (370,605) (430,665)
+0.8 0 0 setrgbcolor
+1.2 setlinewidth
+
+newpath
+240 640 moveto
+280 620 lineto
+320 670 lineto
+370 605 lineto
+430 665 lineto
+stroke
+
+% Marcadores
+0.8 0 0 setrgbcolor
+newpath 240 640 2 0 360 arc fill
+newpath 280 620 2 0 360 arc fill
+newpath 320 670 2 0 360 arc fill
+newpath 370 605 2 0 360 arc fill
+newpath 430 665 2 0 360 arc fill
+
+
+% Número de página
+0 0 0 setrgbcolor
+/Times-Roman findfont
+11 scalefont
+setfont
+newpath
+295 50 moveto
+(2) show
+stroke
+
+showpage     % Fin de la segunda página
